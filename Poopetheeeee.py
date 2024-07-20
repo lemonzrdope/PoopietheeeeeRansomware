@@ -1,3 +1,5 @@
+# THIS IS AN OLDER VERSION PLEASE USE THE V1.0.0 RELEASE
+
 from cryptography.fernet import Fernet
 import smtplib
 from email.mime.multipart import MIMEMultipart
